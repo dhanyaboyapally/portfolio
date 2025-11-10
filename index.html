@@ -8,12 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">Dhanya Boyapally</div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -46,41 +52,213 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm an undergraduate student at the University of Missouri, passionate about software development with a focus on artificial intelligence and machine learning. I recently won the Developer Phase at Tiger Hacks 2025 with my team's project, Ulkaa.study, an AI-powered educational platform.</p>
+                    <p>I'm an undergraduate student at the University of Missouri (Mizzou), passionate about software development with a focus on artificial intelligence and machine learning. I recently won the Developer Phase at Tiger Hacks 2025 with my team's project, Ulkaa.study, an AI-powered educational platform. I'm proud to be on the Dean's List for Fall 2024, recognizing my academic excellence.</p>
                     <p>My work spans across multiple domains - from building interactive space-themed games and web applications to developing data analysis tools and intelligent systems. I love combining creativity with technical skills to create engaging user experiences, whether it's through game development, web design, or AI applications. I'm always eager to learn new technologies and take on challenging projects that push my boundaries.</p>
-                    
-                    <div class="skills">
-                        <h3>Technical Skills</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">C</span>
-                            <span class="skill-tag">C++</span>
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">HTML/CSS</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">Machine Learning</span>
-                            <span class="skill-tag">Deep Learning</span>
-                            <span class="skill-tag">AI/LLMs</span>
-                            <span class="skill-tag">TensorFlow</span>
-                            <span class="skill-tag">PyTorch</span>
-                            <span class="skill-tag">Data Analysis</span>
-                            <span class="skill-tag">Data Science</span>
-                            <span class="skill-tag">Pandas</span>
-                            <span class="skill-tag">NumPy</span>
-                            <span class="skill-tag">Jupyter Notebook</span>
-                            <span class="skill-tag">SQL</span>
-                            <span class="skill-tag">Git/GitHub</span>
-                            <span class="skill-tag">Algorithms</span>
-                            <span class="skill-tag">Data Structures</span>
-                            <span class="skill-tag">Full Stack Development</span>
-                            <span class="skill-tag">Game Development</span>
-                            <span class="skill-tag">Web Development</span>
-                            <span class="skill-tag">Problem Solving</span>
+                    <div class="about-contact">
+                        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:bdhanyareddy05@gmail.com">bdhanyareddy05@gmail.com</a></p>
+                        <p><i class="fas fa-university"></i> <strong>University:</strong> University of Missouri (Mizzou)</p>
+                        <p><i class="fas fa-award"></i> <strong>Dean's List:</strong> <a href="https://engineering.missouri.edu/wp-content/uploads/2025/01/Fall-24-Deans-List_115.pdf" target="_blank">Fall 2024</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <div class="skill-items">
+                        <span class="skill-badge">HTML5</span>
+                        <span class="skill-badge">CSS3</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">React.js</span>
+                        <span class="skill-badge">Responsive Design</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <div class="skill-items">
+                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">Express.js</span>
+                        <span class="skill-badge">SQL</span>
+                        <span class="skill-badge">REST APIs</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">C/C++</span>
+                        <span class="skill-badge">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Data Science & ML</h3>
+                    <div class="skill-items">
+                        <span class="skill-badge">Machine Learning</span>
+                        <span class="skill-badge">Data Analysis</span>
+                        <span class="skill-badge">Pandas</span>
+                        <span class="skill-badge">NumPy</span>
+                        <span class="skill-badge">TensorFlow</span>
+                        <span class="skill-badge">PyTorch</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-items">
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">GitHub</span>
+                        <span class="skill-badge">Jupyter Notebook</span>
+                        <span class="skill-badge">VS Code</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">Education & Experience</h2>
+            
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon education">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>University of Missouri</h3>
+                            <span class="timeline-date"><i class="far fa-calendar"></i> Aug 2024 - Present</span>
+                        </div>
+                        <h4>Bachelor's Degree - Computer Science</h4>
+                        <p>Currently pursuing undergraduate studies in Computer Science with a focus on Artificial Intelligence, Machine Learning, and Software Development.</p>
+                        <div class="timeline-highlights">
+                            <span class="highlight-badge">🏆 Tiger Hacks 2025 Winner - Developer Phase</span>
                         </div>
                     </div>
                 </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon experience">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Tiger Hacks 2025</h3>
+                            <span class="timeline-date"><i class="far fa-calendar"></i> 2025</span>
+                        </div>
+                        <h4>Hackathon Winner - Developer Phase</h4>
+                        <p>Led development of Ulkaa.study, an AI-powered educational platform using LLMs. Won the Developer Phase competing against numerous teams.</p>
+                        <div class="timeline-highlights">
+                            <span class="highlight-badge">AI/ML</span>
+                            <span class="highlight-badge">Full Stack</span>
+                            <span class="highlight-badge">Team Leadership</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon experience">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3> Undergraduate Research Assistant</h3>
+                            <span class="timeline-date"><i class="far fa-calendar"></i> Aug 2024 - Present</span>
+                        </div>
+                        <h4>University of Missouri-Department of Engineering</h4>
+                        <p>Working in the Department of Engineering conducting research and contributing to academic projects. Gaining hands-on experience in cutting-edge technologies and methodologies while supporting faculty research initiatives.</p>
+                        <div class="timeline-highlights">
+                            <span class="highlight-badge">Engineering Research</span>
+                            <span class="highlight-badge">Computer Science</span>
+                            <span class="highlight-badge">AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon experience">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Quantum Innovation Center</h3>
+                            <span class="timeline-date"><i class="far fa-calendar"></i> Jun 2025 - Sep 2025</span>
+                        </div>
+                        <h4>Research Intern - Quantum Computing</h4>
+                        <p>Gained experience in quantum computing principles, quantum algorithms, and their applications. Worked on quantum programming and explored the intersection of quantum computing with AI/ML.</p>
+                        <div class="timeline-highlights">
+                            <span class="highlight-badge">Quantum Computing</span>
+                            <span class="highlight-badge">Quantum Algorithms</span>
+                            <span class="highlight-badge">Research</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon experience">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Teaching Assistant</h3>
+                            <span class="timeline-date"><i class="far fa-calendar"></i> Aug 2025 - Present</span>
+                        </div>
+                        <h4>University of Missouri - Engineering Lab</h4>
+                        <p>Assisting students in engineering lab sessions, providing guidance on technical concepts, troubleshooting experiments, and supporting the learning process. Helping students understand complex engineering principles through hands-on demonstrations and one-on-one mentoring.</p>
+                        <div class="timeline-highlights">
+                            <span class="highlight-badge">Teaching</span>
+                            <span class="highlight-badge">Engineering Lab</span>
+                            <span class="highlight-badge">Mentoring</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon experience">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>IT Consultant</h3>
+                            <span class="timeline-date"><i class="far fa-calendar"></i> Oct 2024 - Aug 2025</span>
+                        </div>
+                        <h4>Information Technology Consultant</h4>
+                        <p>Providing IT consulting services, troubleshooting technical issues, and implementing technology solutions. Supporting clients with software, hardware, and network-related challenges while delivering efficient and effective solutions.</p>
+                        <div class="timeline-highlights">
+                            <span class="highlight-badge">IT Support</span>
+                            <span class="highlight-badge">Technical Consulting</span>
+                            <span class="highlight-badge">Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -195,16 +373,41 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-                <div class="contact-links">
-                    <a href="https://github.com/dhanyaboyapally" target="_blank" class="contact-btn">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/dhanya-boyapally-3262b731a/" target="_blank" class="contact-btn">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
+            <h2 class="section-title">Contact</h2>
+            <p class="contact-subtitle">CONNECT WITH ME</p>
+            <div class="contact-wrapper">
+                <form class="contact-form" action="https://formsubmit.co/bdhanyareddy05@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Portfolio Contact!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://dhanyaboyapally.github.io/portfolio/#contact">
+                    
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Write Message Here..." rows="6" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">SEND</button>
+                </form>
+                
+                <div class="contact-info">
+                    <div class="contact-links">
+                        <a href="https://github.com/dhanyaboyapally" target="_blank" class="contact-btn">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/dhanya-boyapally-3262b731a/" target="_blank" class="contact-btn">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="mailto:bdhanyareddy05@gmail.com" class="contact-btn">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
